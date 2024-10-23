@@ -32,11 +32,11 @@ namespace WindowsFormsApp1
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            SaveFileDialog picture = new SaveFileDialog();
-            picture.FileName = "file.jpg";
-            if (picture.ShowDialog()== DialogResult.OK)
+            SaveFileDialog file1 = new SaveFileDialog();
+            file1.Filter = "(*jpg)|*.jpg";
+            if (file1.ShowDialog()== DialogResult.OK)
             {
-                string filePath = SaveFileDialog.FileName;
+                pct.Image.Save(file1.FileName);
             }
 
         }

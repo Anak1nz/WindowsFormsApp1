@@ -37,19 +37,20 @@
             // 
             // btn
             // 
-            this.btn.Location = new System.Drawing.Point(232, 304);
+            this.btn.AutoSize = true;
+            this.btn.Location = new System.Drawing.Point(202, 303);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(75, 23);
+            this.btn.Size = new System.Drawing.Size(113, 23);
             this.btn.TabIndex = 0;
-            this.btn.Text = "button1";
+            this.btn.Text = "Загрузить рисунок";
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // pct
             // 
-            this.pct.Location = new System.Drawing.Point(215, 142);
+            this.pct.Location = new System.Drawing.Point(130, 59);
             this.pct.Name = "pct";
-            this.pct.Size = new System.Drawing.Size(100, 50);
+            this.pct.Size = new System.Drawing.Size(280, 218);
             this.pct.TabIndex = 1;
             this.pct.TabStop = false;
             // 
@@ -63,7 +64,7 @@
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(75, 23);
             this.SaveBtn.TabIndex = 2;
-            this.SaveBtn.Text = "button1";
+            this.SaveBtn.Text = "Сохранить";
             this.SaveBtn.UseVisualStyleBackColor = true;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
@@ -80,6 +81,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pct)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
